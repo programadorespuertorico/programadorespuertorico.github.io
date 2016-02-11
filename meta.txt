@@ -1,0 +1,25 @@
+Logo Grad
+7BB9CF
+848DD0
+AC01CC
+CD00A9
+DC0392
+
+Header
+584B4F
+
+Content detail
+E34B30
+991F16
+
+Footer
+FAF6EC
+EFEAE1
+
+Template examples
+https://github.com/rohanchandra/type-theme
+http://jekyllthemes.org/themes/hmfaysal-notepad-theme/
+http://jekyllthemes.io/theme/12337267/lagom
+
+Testing locally
+http://kbroman.org/simple_site/pages/local_test.html
