@@ -157,3 +157,19 @@
 	</a>
 </li>
 {% endif %}
+
+{% if site.theme.web %}
+<li>
+	<a href="http://www.{{ site.theme.web }}" title="{{ site.theme.str_follow_on }} The Web">
+		<i class="fa fa-fw fa-globe"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.slack %}
+<li>
+	<a href="https://prdevelopers.herokuapp.com/" title="{{ site.theme.str_follow_on }} Slack">
+		<i class="fa fa-fw fa-slack"></i>
+	</a>
+</li>
+{% endif %}

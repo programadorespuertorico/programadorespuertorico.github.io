@@ -6,18 +6,14 @@ url: "http://notes.programadorespuertorico.com" # the base hostname & protocol f
 theme:
   # Meta
   title: Programadores Puerto Rico
-  avatar: avatar.png
+  avatar: 
   gravatar: # Email MD5 hash
   description: "Un espacio para programadores puertorriqueños que desean hacer networking." # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
   # Icons
   rss: true
@@ -37,9 +33,11 @@ theme:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter:
   wordpress:
   youtube:
+  web: "programadorespuertorico.com"
+  slack: true
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
@@ -61,6 +59,10 @@ theme:
   # Post navigation
   post_navigation: false
 
+# CATEGORIES
+categories:
+  programacion
+  
 # PAGINATION
 paginate: 5
 paginate_path: "page:num"
@@ -71,3 +73,6 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
+
+# Permalinks
+permalink: /:year/:month/:title

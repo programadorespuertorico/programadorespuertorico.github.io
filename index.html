@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="home">
@@ -11,7 +12,7 @@ layout: default
   {% endif %}
 
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     <div class="post-teaser">
       <header>
         <h1>
