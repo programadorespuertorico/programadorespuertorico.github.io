@@ -3,36 +3,59 @@ layout: default
 title:  Archives
 permalink: /archives/
 ---
+<!-- <div id="archives">
+
+  <h3>This year's posts</h3>
+  {%for post in site.posts %}
+    {% unless post.next %}
+      <ul class="this">
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        </ul>
+        <h3>{{ post.date | date: '%Y' }}</h3>
+        <ul class="past">
+      {% endif %}
+    {% endunless %}
+      <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+</div> -->
+
 <div id="archives">
 
-{% assign sortedcats = site.categories | sort %}
-<section class="categories">
-  <ul>
-    {% for category in sortedcats  %}
-    <li>
-    <a class="category" href="#{{category | first}}">{{ category | first }}</a>
-  </li>
-    {% endfor %}
-  </ul>
-</section>
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
-<section class="posts">
-  {% for category in sortedcats %}
+    {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+    <h3 id="{{ this_year }}-{{ this_month }}-ref">{{ this_month }}</h3>
+    <ul>
+    {% endif %}
 
-  <h3 id="{{category | first}}">{{ category | first }} ({{ category[1] | size }})</h3>
-  <ul>
-    {% assign pages = category[1] %}
-    {% for page in pages | sort: 'date' %}
-      <li>
-        {{ page.date | date: "%D" }}
-        <a href="{{ site.BASE_PATH }}{{page.url}}">{{page.title}}</a>
-      </li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 
-    {% endfor %}
-  </ul>
-
-  {% endfor %}
-
-</section>
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+        <h3 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+        <ul>
+        {% else %}    
+            {% if this_month != next_month %}
+            </ul>
+            <h3 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
+            <ul>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
 
 </div>

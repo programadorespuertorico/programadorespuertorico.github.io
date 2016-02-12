@@ -60,8 +60,7 @@ theme:
   post_navigation: false
 
 # CATEGORIES
-categories:
-  programacion
+categories: programacion
   
 # PAGINATION
 paginate: 5
