@@ -5,7 +5,7 @@ url: "http://notes.programadorespuertorico.com" # the base hostname & protocol f
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Programadores Puerto Rico
+  title: Notes by Programadores Puerto Rico
   avatar: 
   gravatar: # Email MD5 hash
   description: "Un espacio para programadores puertorriqueños que desean hacer networking." # used by search engines

@@ -1,15 +1,14 @@
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
 		<header class="inner">
-			<!-- <a id="forkme_banner" href="https://github.com/programadorespuertorico">View on GitHub</a> -->
 
-			<h1 id="project_title">Programadores Puerto Rico</h1>
+			<h1 id="project_title">{{ site.theme.title }}</h1>
 			<h2 id="project_tagline">Un espacio para programadores puertorriqueños que desean hacer networking.</h2>
 
 		</header>
 </div>
 <nav class="site-nav">
-	<ul>
+	<ul class="nav nav-pills nav-justified">
 		{% for page in site.pages %}
 		{% if page.title and page.hide != true %}
 		<li>
@@ -19,7 +18,5 @@
 		</li>
 		{% endif %}
 		{% endfor %}
-		<!-- Social icons from Font Awesome, if enabled -->
-		{% include icons.html %}
 	</ul>
 </nav>
