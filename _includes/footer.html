@@ -1,10 +1,18 @@
 <!-- {% if site.theme.footer_text %} -->
+<div class="deco"></div>
 <footer class="site-footer">
-    <ul class="nav nav-pills nav-justified">
+    
+  <div class="row" style="max-width: 960px; margin: 0 auto;">
+    <div class="col-md-6">	
+      <!-- <p class="text">{{ site.theme.footer_text }}</p> -->
+      <p class="text" style="transform: translateY(50%);">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav nav-pills nav-justified">
         <!-- Social icons from Font Awesome, if enabled -->
         {% include icons.html %}
-    </ul>   
-	<!-- <p class="text">{{ site.theme.footer_text }}</p> -->
-    <p class="text">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      </ul>
+    </div>
+  </div>
 </footer>
 <!-- {% endif %} -->

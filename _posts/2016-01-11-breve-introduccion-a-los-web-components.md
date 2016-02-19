@@ -3,7 +3,6 @@ layout: post
 title: Breve introducción a los Web Components
 feature-img: "img/sample_feature_img.png"
 ---
-# Breve introducción a los Web Components
 
 Hablemos un poco del futuro antes que sea demasiado tarde. Y es que el tema sobre Web Components cada día que pasa adquiere más tracción entre los desarrolladores web.
 

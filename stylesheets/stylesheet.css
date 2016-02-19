@@ -266,7 +266,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 960px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -338,9 +338,34 @@ Full-Width Styles
 #footer_wrap,
 .site-footer {
   background: #414140;
+  padding: 60px 20px;
+  
 }
 
-
+.deco {
+    margin-top: 40px;
+    height: 4px;
+    width: 100%;
+      background-color: #212121;
+  background-image:
+    linear-gradient(
+      45deg,
+      #7BB9CF,
+      #848DD0,
+      #AC01CC,
+      #CD00A9,
+      #DC0392
+    );
+  /*
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);
+  */
+}
+    
+}
 
 /*******************************************************************************
 Small Device Styles
