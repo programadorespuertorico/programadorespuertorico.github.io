@@ -1,0 +1,56 @@
+
+
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+#particles-js {
+  height:400px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 52, 99, 0.72);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+header {
+  position: relative;
+  padding:100px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+header .title {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  /*text-align: center;
+  width: 100%;*/
+}
+
+header .logo {
+  height:50px;
+  position: relative;
+  bottom: 2px;
+}
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#main-content {
+  padding:10px;
+}
+
+body {
+  color:#373737;
+  background: #e6e6e6;
+  border-top: 10px solid rgb(221, 3, 147);
+}
