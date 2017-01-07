@@ -44,6 +44,7 @@ canvas {
   display: block;
   top: 0;
   left: 0;
+  margin: 0;
 }
 #main-content {
   padding:10px;
