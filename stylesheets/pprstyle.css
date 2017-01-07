@@ -43,7 +43,8 @@ header .logo {
 
 canvas {
   display: block;
-  vertical-align: bottom;
+  top: 0;
+  left: 0;
 }
 #main-content {
   padding:10px;
