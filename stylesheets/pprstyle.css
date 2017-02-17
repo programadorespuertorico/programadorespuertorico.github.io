@@ -50,3 +50,12 @@ body {
   background: #e6e6e6;
   border-top: 10px solid rgb(221, 3, 147);
 }
+
+.text-align{
+  text-align: center;
+}
+
+.line{
+  height: 1px;
+  background-color: #a6a6a6;
+}
