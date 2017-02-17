@@ -1,9 +1,11 @@
-
-
-
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 #particles-js {
   height:400px;
@@ -18,12 +20,14 @@ Theme Styles
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 header {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   height: 200px;
 }
+
 header .title {
   color: white;
   z-index: 2;
@@ -34,13 +38,13 @@ header .logo {
   bottom: 2px;
 }
 
-
 canvas {
   display: block;
   top: 0;
   left: 0;
   margin: 0;
 }
+
 #main-content {
   padding:10px;
 }
@@ -49,4 +53,25 @@ body {
   color:#373737;
   background: #e6e6e6;
   border-top: 10px solid rgb(221, 3, 147);
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+.row div {
+  padding-bottom: 20px;
+}
+
+.row p:nth-child(3) {
+  text-align: center;
+}
+
+.container .text-muted {
+  margin: 20px 0;
 }
