@@ -1,10 +1,22 @@
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+* {
+  margin: 0;
+}
 
-html {
-  position: relative;
+html, body {
+  height: 100%;
+}
+
+.wrap {
   min-height: 100%;
+  margin-bottom: -60px;
+}
+
+.wrap:after {
+  content: "";
+  display: block;
 }
 
 #particles-js {
@@ -53,15 +65,15 @@ body {
   color:#373737;
   background: #e6e6e6;
   border-top: 10px solid rgb(221, 3, 147);
-  margin-bottom: 60px;
+}
+
+.footer, .wrap:after {
+  height: 60px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
 }
 
 .row div {
@@ -72,6 +84,3 @@ body {
   text-align: center;
 }
 
-.container .text-muted {
-  margin: 20px 0;
-}
